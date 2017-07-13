@@ -66,6 +66,11 @@ var findParentByClassName = function(element, targetClass) {
         }
         return currentParent;
     }
+    if document.getElementsByClassName !== currentParent {
+        console.log("No parent found")
+    } else {
+        console.log("Parent found")
+    };
 };
 
 var getSongItem = function(element) {
